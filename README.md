@@ -45,7 +45,7 @@ def convert_lst_dct(pos, items):
 ```
 
 ### 2. Create a function that generates your part-of-speech (POS) grammar:  
-Create a function that create a dictionary with multiple keys.
+Create a function that generates a dictionary (grammar) with multiple keys where each key has a list of strings.
 
 Input parameters:
 ```python
