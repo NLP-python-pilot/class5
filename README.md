@@ -1,4 +1,3 @@
-# class5
 # Assignment #5 - March 4th to March 11th
 
 ###### *Solutions for previous assignments can be found here: https://github.com/ponceoscarj/nlp_python_pilot/tree/main*
