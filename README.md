@@ -70,14 +70,14 @@ For this question you will need to use your grammar from **Question 2**. The fun
 Input parameters:
 ```python
 sentence = "I want to play football"
-grammar = {"noun":["park", "football", "home", "Switzerland"], 
-"pronoun":["i", "me", "he", "she"], 
-"preposition": ["to","at"]} 
+grammar = {"noun":["park", "football", "home", "Switzerland"], "pronoun":["i", "me", "he", "she"],
+           "verb":["work", "want", "play", "travel"], 
+           "preposition": ["to","at"]}
 ```
 
 Output:
 ```python
-[['pronoun', 'i'], ['pronoun', 'want'], ['preposition', 'to'], ['preposition', 'play'], ['noun', 'football']]
+[['pronoun', 'i'], ['verb', 'want'], ['preposition', 'to'], ['verb', 'play'], ['noun', 'football']]
 ```
 
 As you see each list has the word and their corresponding POS in the following form `[POS, word]`.
@@ -88,14 +88,14 @@ Same as question 3 but this time your output will be a dictionary where the keys
 Input parameters:
 ```python
 sentence = "I want to play football"
-grammar = {"noun":["park", "football", "home", "Switzerland"], 
-"pronoun":["i", "me", "he", "she"], 
-"preposition": ["to","at"]} 
+grammar = {"noun":["park", "football", "home", "Switzerland"], "pronoun":["i", "me", "he", "she"],
+           "verb":["work", "want", "play", "travel"], 
+           "preposition": ["to","at"]} 
 ```
 
 Output:
 ```python
-{'i': 'pronoun', 'want': 'pronoun', 'to': 'preposition', 'play': 'preposition', 'football': 'noun'}
+{'i': 'pronoun', 'want': 'verb', 'to': 'preposition', 'play': 'verb', 'football': 'noun'}
 ```
 
 As you can see the keys and values are organised in the following form `{POS: word, POS: word, POS:word ...}`
@@ -107,9 +107,9 @@ Your class name will be `pos` without any parent. It has to be initialised with 
 
 ```python
 sentence = "I want to play football"
-grammar = {"noun":["park", "football", "home", "Switzerland"], 
-"pronoun":["i", "me", "he", "she"], 
-"preposition": ["to","at"]} 
+grammar = {"noun":["park", "football", "home", "Switzerland"], "pronoun":["i", "me", "he", "she"],
+           "verb":["work", "want", "play", "travel"], 
+           "preposition": ["to","at"]} 
 ```
 
 Within your class, you will have two methods : `pos_lst` and `pos_dct`. The first (`pos_lst`) will do the same as in your **Question 3** and the second (`pos_dct`) will do the same as in your **Question 4**.
