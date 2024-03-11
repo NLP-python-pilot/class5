@@ -64,7 +64,7 @@ grammar = {"noun":["park", "football", "home", "Switzerland"],
 
 
 ### 3. Create a function that identifies the part-of-speech (POS) of a sentence - List of lists:  
-For this question you will need to use your grammar from **Question 2**. The function will input a sentence in the form  of string and it will automatically classify each word's POS based on your grammar and the function will output a list of lists. See below.
+For this question you will need to use the grammar dictionary (below). The function will input a sentence in the form  of string and it will automatically classify each word's POS based on your grammar and the function will output a list of lists. See below.
 
 
 Input parameters:
